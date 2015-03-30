@@ -1,2 +1,2 @@
-First Art
+Mickle Hill Apartments
 A responsive mobile first theme for Concrete5, built using SASS, Compass, Susy, Javascript and HTML5. Designed by Katapult - katapult.co.uk
