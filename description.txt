@@ -1,0 +1,2 @@
+Concrete5 Theme Boilerplate
+A responsive mobile first theme for Concrete5, built using SASS, Susy, Javascript and HTML5. Designed by Katapult - katapult.co.uk
