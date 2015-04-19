@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/build/styles.css">
+        <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/build/css/styles.min.css">
         <script src="<?php echo $view->getThemePath()?>/bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
@@ -27,9 +27,8 @@
           <?php $view->inc('inc/footer.php'); ?>
           
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-          <script src="<?php echo $view->getThemePath()?>/js/plugins.js"></script>
-          <script src="<?php echo $view->getThemePath()?>/js/main.js"></script>
+          <script>window.jQuery || document.write('<script src="<?php echo $view->getThemePath()?>/bower_components/jquery/dist/jquery.js"><\/script>')</script>
+          <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/build/js/scripts.min.js">
   
           <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
           <script>
