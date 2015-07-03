@@ -10,6 +10,16 @@ module.exports = function(grunt) {
         destCss: 'css/sprites.css'
       }
     },
+
+    copy: {
+      build: {
+        cwd: 'html-src',
+        src: [ '**' ],
+        dest: 'build',
+        expand: true
+      },
+    },
+
     webfont: {
         icons: {
             src: 'icons/*.svg',
@@ -33,7 +43,8 @@ module.exports = function(grunt) {
     sass: {                              // Task 
       dist: {                            // Target 
         options: {                       // Target options 
-          style: 'expanded'
+          style: 'expanded',
+          require: 'susy'
         },
         files: {                         // Dictionary of files 
           'css/main.css': 'sass/main.scss',       // 'destination': 'source' 
@@ -95,6 +106,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   
   grunt.registerTask('default', [
     
@@ -104,6 +116,7 @@ module.exports = function(grunt) {
     'uglify',
     'cssmin',
     'sprite',
-    'webfont'
+    'webfont',
+    'copy'
   ]);
 };
