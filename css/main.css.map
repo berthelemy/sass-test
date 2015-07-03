@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";;AAEA,IAAK;EACD,UAAU,ECHC,OAAO",
+"sources": ["../sass/components/_branding.scss","../sass/a-vars/_colours.scss"],
 "names": [],
 "file": "main.css"
 }
